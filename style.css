@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 2% 0;
+}
+
+.grid {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 0 auto;
+    background: url(ressources/night_background.png);
+    animation: background-anime 5s linear infinite;
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+}
+
+.shooter {
+    background: url(ressources/vaisseau.png);
+    background-position: center;
+    background-size:cover;
+   
+}
+
+.invader {
+    background: url(ressources/aliens.png);
+    background-position: center;
+    background-size: contain;
+    /*background-color: purple; */
+}
+
+.boom {
+    background-color: #f3722c;
+}
+
+.laser {
+    background-color: #d00000;
+}
+
+// Partie keyframes
+
+@keyframes background-anime {
+    from {
+        background-position-y: 0px;
+    }
+
+    to {
+        background-position-y: 256px;
+    }
+}
